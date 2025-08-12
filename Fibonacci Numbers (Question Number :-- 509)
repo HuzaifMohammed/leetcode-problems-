@@ -1,0 +1,16 @@
+class Solution {
+    public int fib(int n) {
+        int first = 0;
+        int second = 1;
+        int answer = 0;
+
+        while(n>=0){
+            answer=first;
+            int third = first+second;
+            first = second;
+            second=third;
+            n--;
+        }
+        return answer;
+    }
+}
